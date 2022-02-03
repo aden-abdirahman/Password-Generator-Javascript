@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-
+/* setting height, margin, and padding properties for wrapper and body */
 html,
 body,
 .wrapper {
@@ -11,45 +11,45 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* setting font and bg-color for body */
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #e0e4e7;
 }
-
+/* setting padding properties for wrapper */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/* setting properties for header */
 header {
-  text-align: center;
-  padding: 20px;
   padding-top: 0px;
+  padding: 20px;
   color: hsl(206, 17%, 28%);
+  text-align: center;
 }
-
+/* setting properties for .card */
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  background-color: hsl(0, 54%, 93%);
   border-width: 1px;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
   max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
   padding: 30px 40px;
 }
-
+/* setting properties for .card-header */
 .card-header::after {
   content: " ";
-  display: block;
   width: 100%;
-  background: #e7e9eb;
+  display: block;
   height: 2px;
+  background: #c8cccf;
 }
-
+/* setting properties for .card-body */
 .card-body {
   min-height: 100px;
 }
@@ -57,13 +57,13 @@ header {
 .card-footer {
   text-align: center;
 }
-
+/* setting properties for .card-footer */
 .card-footer::before {
   content: " ";
-  display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #d3d6da;
   height: 2px;
+  display: block;
 }
 
 .card-footer::after {
@@ -71,21 +71,21 @@ header {
   display: block;
   clear: both;
 }
-
+/* setting properies for buttons */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  background-color: hsl(360, 91%, 36%);
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
+  margin: 16px 16px 16px 20px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
 }
 
 button[disabled] {
@@ -96,7 +96,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/* setting properties for #password */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -104,25 +104,23 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
+  padding: 15px 15px 85px;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  margin: 10px 0px;
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
 }
-
+/* setting @media properties so its responsive to different screen sizes */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
-    margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+    margin-top: 15px;
   }
 
   #password {
@@ -132,6 +130,6 @@ button[disabled] {
 
 @media (max-width: 500px) {
   .btn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
